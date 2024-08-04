@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        /* navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .navbar .logo {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .menu {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar .menu li {
+            margin: 0 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .navbar .menu li a {
+            text-decoration: none;
+            color: black;
+        }
+        .navbar .search {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .search input {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 5px;
+            font-size: 16px;
+        }
+        .navbar .search .fa-search {
+            margin-left: 10px;
+            font-size: 20px;
+            color: #ccc;
+        }
+        /* navbar end */
+
+        /* washlet hero 1 */
+        .hero-washlet-1 {
+            background-image: url("img/d173d9_055b55153bd14c2380c7f3dc082fa51c~mv2.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 800px;
+        }
+        /* washlet hero 1 end */
+
+
+
+
+
+
+
+
+
+        /* footer */
+        .container-footer {
+            background-color: rgb(228, 228, 228);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 50px 100px;
+        }
+        .column-footer {
+            flex: 1;
+            min-width: 150px;
+            margin: 10px;
+        }
+        .column-footer h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .column-footer p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 100px;
+        }
+        .footer p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+        .footer .social-icons-footer {
+            margin: 20px 0;
+        }
+        .footer .social-icons-footer i {
+            font-size: 20px;
+            margin: 0 10px;
+        }
+        .footer .address-footer {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        /* footer end */
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="bg-white border-gray-200">
+        <div class="max-w-screen flex flex-wrap items-center justify-between ">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap bg-black text-white px-4 py-2">TOTO</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div class="hidden w-full lg:w-auto lg:flex lg:flex-row lg:gap-5 lg:justify-between lg:items-center md:flex md:flex-row md:items-center md:justify-between md:w-[80%]" id="navbar-default">                
+                
+                <div>
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
+                        <li>
+                            <a href="neorest-menu.html" class="block py-2 px-3 uppercase text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0">NEOREST</a>
+                        </li>
+                        <li>
+                            <a href="washlet-menu.html" class="block py-2 px-3 uppercase text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0">WASHLET</a>
+                        </li>
+                        <li>
+                            <a href="sanitary-menu.html" class="block py-2 px-3 uppercase text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0">SANITARY</a>
+                        </li>
+                        <li>
+                            <a href="fitting-menu.html" class="block py-2 px-3 uppercase text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0 ">FITTING</a>
+                        </li>
+                        <li>
+                            <a href="find-Us-menu.html" class="block py-2 px-3 uppercase text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0 ">FIND US</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="flex">
+                    <div class="relative w-full md:w-auto">
+                        <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 border-gray-300 focus:ring-slate-700 " placeholder="Search" required />
+                        <button type="submit" class="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white bg-slate-800 border-b border-b-slate-600 hover:bg-slate-500  ">
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+
+
+    <div style=" background-image: url('/img/fitting.webp'); background-repeat: no-repeat; background-size: cover; background-position: 60% 100%; max-width: 100%; height: fit-content; padding: 0 20px; display: flex; justify-content: end; position: relative;">
+        <div style=" max-width: 50%; position: relative;padding: 130px 0px;">
+            <div style="background-color: wheat; max-width: 70%; padding: 50px; box-sizing: border-box; background-color: rgba(240, 248, 255, 0.616);">
+                <h3 style="font-size: 45pt; line-height: 2pt;">FITTING</h3>
+                <p style="font-size: 16pt;">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure ea placeat voluptatum cumque corporis excepturi!
+                </p>
+                <a href="#">Learn more ></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="width: 100%; height: fit-content; display: flex; justify-content: center; flex-wrap: wrap;">
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; max-width: 60%; padding: 60px 0;">
+            <div style="background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 300px; padding: 40px 0; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img src="/img/SP 2515.jpg" alt="" width="300" height="400" style="object-fit: cover;">
+                <h2 style="font-size: 32pt; margin-bottom: 10px; margin-top: 5px; font-weight: 300;"><span style="font-size: 45pt;">SP</span> Keran</h2>
+                <p style="max-width: 70%; font-size: 16pt; color: rgb(126, 126, 126);">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque et minus? Alias, repellat ducimus?
+                    <br><br><a href="#" style="max-width: 70%; text-align: left;">learn more</a>
+                </p>
+            </div>
+            <div style="background-color: #ffffff;display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 300px; padding: 40px 0; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img src="/img/IMG_2981 edit.png" alt="" width="300" height="400" style="object-fit: cover;">
+                <h2 style="font-size: 32pt; margin-bottom: 10px; margin-top: 5px; font-weight: 300;"><span style="font-size: 45pt;">SP</span> Keran</h2>
+                <p style="max-width: 70%; font-size: 16pt; color: rgb(126, 126, 126);">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque et minus? Alias, repellat ducimus?
+                    <br><br><a href="#" style="max-width: 70%; text-align: left;">learn more</a>
+                </p>
+            </div>
+            <div style="background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 300px; padding: 40px 0; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img src="/img/DSC_1380.png" alt="" width="300" height="400" style="object-fit: cover;">
+                <h2 style="font-size: 32pt; margin-bottom: 10px; margin-top: 5px; font-weight: 300;"><span style="font-size: 45pt;">SP</span> Keran</h2>
+                <p style="max-width: 70%; font-size: 16pt; color: rgb(126, 126, 126);">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque et minus? Alias, repellat ducimus?
+                    <br><br><a href="#" style="max-width: 70%; text-align: left;">learn more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; height: fit-content; display: flex; justify-content: center; flex-wrap: wrap;">
+        
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; max-width: 60%;">
+            <div style="background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 220px; padding: 40px 0; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img src="/img/SP 2515.jpg" alt="" width="220" height="200" style="object-fit: contain;">
+                <h2 style="font-size: 24pt; margin-bottom: 10px; margin-top: 5px; font-weight: 300;"><span style="font-size: 32pt;">SP</span> Keran</h2>
+                <p style="max-width: 70%; font-size: 16pt; color: rgb(126, 126, 126);">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque et minus? Alias, repellat ducimus?
+                    <br><br><a href="#" style="max-width: 70%; text-align: left;">learn more</a>
+                </p>
+            </div>
+            <div style=" background-color: #ffffff;display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 220px; padding: 40px 0; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img src="/img/SP 2515.jpg" alt="" width="220" height="200" style="object-fit: contain;">
+                <h2 style="font-size: 24pt; margin-bottom: 10px; margin-top: 5px; font-weight: 300;"><span style="font-size: 32pt;">SP</span> Keran</h2>
+                <p style="max-width: 70%; font-size: 16pt; color: rgb(126, 126, 126);">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque et minus? Alias, repellat ducimus?
+                    <br><br><a href="#" style="max-width: 70%; text-align: left;">learn more</a>
+                </p>
+            </div>
+            <div style=" background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 220px; padding: 40px 0; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img src="/img/SP 2515.jpg" alt="" width="220" height="200" style="object-fit: contain;">
+                <h2 style="font-size: 24pt; margin-bottom: 10px; margin-top: 5px; font-weight: 300;"><span style="font-size: 32pt;">SP</span> Keran</h2>
+                <p style="max-width: 70%; font-size: 16pt; color: rgb(126, 126, 126);">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque et minus? Alias, repellat ducimus?
+                    <br><br><a href="#" style="max-width: 70%; text-align: left;">learn more</a>
+                </p>
+            </div>
+            <div style="background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 220px; padding: 40px 0; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img src="/img/SP 2515.jpg" alt="" width="220" height="200" style="object-fit: contain;">
+                <h2 style="font-size: 24pt; margin-bottom: 10px; margin-top: 5px; font-weight: 300;"><span style="font-size: 32pt;">SP</span> Keran</h2>
+                <p style="max-width: 70%; font-size: 16pt; color: rgb(126, 126, 126);">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque et minus? Alias, repellat ducimus?
+                    <br><br><a href="#" style="max-width: 70%; text-align: left;">learn more</a>
+                </p>
+            </div>
+            <div style="background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 220px; padding: 40px 0; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img src="/img/SP 2515.jpg" alt="" width="220" height="200" style="object-fit: contain;">
+                <h2 style="font-size: 24pt; margin-bottom: 10px; margin-top: 5px; font-weight: 300;"><span style="font-size: 32pt;">SP</span> Keran</h2>
+                <p style="max-width: 70%; font-size: 16pt; color: rgb(126, 126, 126);">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque et minus? Alias, repellat ducimus?
+                    <br><br><a href="#" style="max-width: 70%; text-align: left;">learn more</a>
+                </p>
+            </div>
+            <div style="background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 220px; padding: 40px 0; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img src="/img/SP 2515.jpg" alt="" width="220" height="200" style="object-fit: contain;">
+                <h2 style="font-size: 24pt; margin-bottom: 10px; margin-top: 5px; font-weight: 300;"><span style="font-size: 32pt;">SP</span> Keran</h2>
+                <p style="max-width: 70%; font-size: 16pt; color: rgb(126, 126, 126);">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque et minus? Alias, repellat ducimus?
+                    <br><br><a href="#" style="max-width: 70%; text-align: left;">learn more</a>
+                </p>
+            </div>
+            <div style="background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 220px; padding: 40px 0; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img src="/img/SP 2515.jpg" alt="" width="220" height="200" style="object-fit: contain;">
+                <h2 style="font-size: 24pt; margin-bottom: 10px; margin-top: 5px; font-weight: 300;"><span style="font-size: 32pt;">SP</span> Keran</h2>
+                <p style="max-width: 70%; font-size: 16pt; color: rgb(126, 126, 126);">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque et minus? Alias, repellat ducimus?
+                    <br><br><a href="#" style="max-width: 70%; text-align: left;">learn more</a>
+                </p>
+            </div>
+            <div style="background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 220px; padding: 40px 0; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+                <img src="/img/SP 2515.jpg" alt="" width="220" height="200" style="object-fit: contain;">
+                <h2 style="font-size: 24pt; margin-bottom: 10px; margin-top: 5px; font-weight: 300;"><span style="font-size: 32pt;">SP</span> Keran</h2>
+                <p style="max-width: 70%; font-size: 16pt; color: rgb(126, 126, 126);">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore itaque et minus? Alias, repellat ducimus?
+                    <br><br><a href="#" style="max-width: 70%; text-align: left;">learn more</a>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div style=" display: flex; justify-content: center; flex-direction: column; align-items: center; padding: 60px 0px; ">
+        <h1 style="text-align: center;">Designer Series</h1>
+        <div style=" padding: 10px; width: 70%; display: flex; gap: 20px; justify-content: center;">
+            <div style="background-color: #ffffff; box-shadow: -4px 9px 24px -4px rgba(77,77,77,0.39); -webkit-box-shadow: -4px 9px 24px -4px rgba(77,77,77,0.39); -moz-box-shadow: -4px 9px 24px -4px rgba(77,77,77,0.39); width: 330px;">
+                <img src="https://images.unsplash.com/photo-1482961674540-0b0e8363a005?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="330px" height="380px" style="object-fit: cover;">
+                <h4 style="font-size: 24pt; line-height: 0%; padding: 0 20px;">Life balance</h4>
+                <p style="margin-top: -20px; padding: 0 20px;">by sergio roberto</p>
+                <div style=" display: flex; flex-direction: column; padding: 0 20px; padding-bottom: 150px;">
+                    <p style="font-size: 16pt; color: rgb(104, 104, 104);">Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit amet.</p>
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+            <div style="background-color: #ffffff; box-shadow: -4px 9px 24px -4px rgba(77,77,77,0.39); -webkit-box-shadow: -4px 9px 24px -4px rgba(77,77,77,0.39); -moz-box-shadow: -4px 9px 24px -4px rgba(77,77,77,0.39); width: 330px;">
+                <img src="https://images.unsplash.com/photo-1482961674540-0b0e8363a005?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="330px" height="380px" style="object-fit: cover;">
+                <h4 style="font-size: 24pt; line-height: 0%; padding: 0 20px;">Life balance</h4>
+                <p style="margin-top: -20px; padding: 0 20px;">by sergio roberto</p>
+                <div style=" display: flex; flex-direction: column; padding: 0 20px; padding-bottom: 150px;">
+                    <p style="font-size: 16pt; color: rgb(104, 104, 104);">Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit amet.</p>
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+            <div style="background-color: #ffffff; box-shadow: -4px 9px 24px -4px rgba(77,77,77,0.39); -webkit-box-shadow: -4px 9px 24px -4px rgba(77,77,77,0.39); -moz-box-shadow: -4px 9px 24px -4px rgba(77,77,77,0.39); width: 330px;">
+                <img src="https://images.unsplash.com/photo-1482961674540-0b0e8363a005?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="330px" height="380px" style="object-fit: cover;">
+                <h4 style="font-size: 24pt; line-height: 0%; padding: 0 20px;">Life balance</h4>
+                <p style="margin-top: -20px; padding: 0 20px;">by sergio roberto</p>
+                <div style=" display: flex; flex-direction: column; padding: 0 20px; padding-bottom: 150px;">
+                    <p style="font-size: 16pt; color: rgb(104, 104, 104);">Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum dolor sit amet.</p>
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="display: flex; flex-direction: column; margin: 40px auto; width: 55%;">
+        <h1 style="text-align: center;">Elemement of style</h1>
+        <div style="width: 50%; display: flex; flex-direction: column; gap: 0;">
+            <h1 style="margin: auto 0; font-weight: lighter; font-size: 32pt;">Modern</h1>
+            <p style="font-size: 14pt; line-height: 20pt;">
+                The Modern collections are designed for those who appreciate the wealth of subtlety.
+            </p>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 20px;">
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <div style="display: flex; flex-direction: column; margin: 20px auto; width: 55%;">
+        <div style="width: 50%; display: flex; flex-direction: column; gap: 0;">
+            <h1 style="margin: auto 0; font-weight: lighter; font-size: 32pt;">Contemporary</h1>
+            <p style="font-size: 14pt; line-height: 20pt;">
+                The Modern collections are designed for those who appreciate the wealth of subtlety.
+            </p>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 20px;">
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+        </div>
+    </div>
+
+    
+    
+    <div style="display: flex; flex-direction: column; margin: 20px auto; width: 55%;">
+        <div style="width: 50%; display: flex; flex-direction: column; gap: 0;">
+            <h1 style="margin: 0; font-weight: lighter; font-size: 32pt;">Classic</h1>
+            <p style="font-size: 14pt; line-height: 20pt;">
+                The Modern collections are designed for those who appreciate the wealth of subtlety.
+            </p>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 20px;">
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; background-color: #e4e4e4; text-decoration: none; color: black;">
+                <img src="/img/DSC_7227.png" alt="" width="180" height="77" style="object-fit: cover; object-position: 0% 20%; ">
+                <p style="background-color: #ccc; width: 100%; padding: 5px 0; margin: 0; text-align: center;">type 1</p>
+            </a>
+            
+        </div>
+    </div>
+
+
+
+    <div style="padding: 40px; background-color: #ffffff; display: flex; justify-content: center;">
+        <div style=" width: 90%; display: flex; flex-wrap: wrap; gap: 40px;">
+            <div style="display: flex; flex-direction: column; width: fit-content;">
+                <a href="#" style="border-bottom: 1px solid #b3b3b3;">
+                    <img src="/img/DSC_7227.png" alt="" width="200">
+                </a>
+                <span style="margin: 0; padding: 5px 0; font-weight: bold;">SKU000123456</span>
+                <p style="margin: 0; color: #757575;">IDR 1.200.000</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: fit-content;">
+                <a href="#" style="border-bottom: 1px solid #b3b3b3;">
+                    <img src="/img/DSC_7227.png" alt="" width="200">
+                </a>
+                <span style="margin: 0; padding: 5px 0; font-weight: bold;">SKU000123456</span>
+                <p style="margin: 0; color: #757575;">IDR 1.200.000</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: fit-content;">
+                <a href="#" style="border-bottom: 1px solid #b3b3b3;">
+                    <img src="/img/DSC_7227.png" alt="" width="200">
+                </a>
+                <span style="margin: 0; padding: 5px 0; font-weight: bold;">SKU000123456</span>
+                <p style="margin: 0; color: #757575;">IDR 1.200.000</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: fit-content;">
+                <a href="#" style="border-bottom: 1px solid #b3b3b3;">
+                    <img src="/img/DSC_7227.png" alt="" width="200">
+                </a>
+                <span style="margin: 0; padding: 5px 0; font-weight: bold;">SKU000123456</span>
+                <p style="margin: 0; color: #757575;">IDR 1.200.000</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: fit-content;">
+                <a href="#" style="border-bottom: 1px solid #b3b3b3;">
+                    <img src="/img/DSC_7227.png" alt="" width="200">
+                </a>
+                <span style="margin: 0; padding: 5px 0; font-weight: bold;">SKU000123456</span>
+                <p style="margin: 0; color: #757575;">IDR 1.200.000</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: fit-content;">
+                <a href="#" style="border-bottom: 1px solid #b3b3b3;">
+                    <img src="/img/DSC_7227.png" alt="" width="200">
+                </a>
+                <span style="margin: 0; padding: 5px 0; font-weight: bold;">SKU000123456</span>
+                <p style="margin: 0; color: #757575;">IDR 1.200.000</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: fit-content;">
+                <a href="#" style="border-bottom: 1px solid #b3b3b3;">
+                    <img src="/img/DSC_7227.png" alt="" width="200">
+                </a>
+                <span style="margin: 0; padding: 5px 0; font-weight: bold;">SKU000123456</span>
+                <p style="margin: 0; color: #757575;">IDR 1.200.000</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: fit-content;">
+                <a href="#" style="border-bottom: 1px solid #b3b3b3;">
+                    <img src="/img/DSC_7227.png" alt="" width="200">
+                </a>
+                <span style="margin: 0; padding: 5px 0; font-weight: bold;">SKU000123456</span>
+                <p style="margin: 0; color: #757575;">IDR 1.200.000</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: fit-content;">
+                <a href="#" style="border-bottom: 1px solid #b3b3b3;">
+                    <img src="/img/DSC_7227.png" alt="" width="200">
+                </a>
+                <span style="margin: 0; padding: 5px 0; font-weight: bold;">SKU000123456</span>
+                <p style="margin: 0; color: #757575;">IDR 1.200.000</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="container-footer">
+        <div class="column-footer">
+            <h3>NEOREST</h3>
+            <p>Wellness</p>
+            <p>Cleanliness</p>
+            <p>Design</p>
+            <p>Sustainability</p>
+            <p>Hospitality</p>
+        </div>
+        <div class="column-footer">
+            <h3>SANITARY</h3>
+            <p>Neorest</p>
+            <p>Toilet</p>
+            <p>Lavatory</p>
+            <p>Urinal</p>
+            <p>Bidet</p>
+            <p>Bathtub</p>
+            <p>Sink</p>
+        </div>
+        <div class="column-footer">
+            <h3>FITTING</h3>
+            <p>Automatic</p>
+            <p>Shower & Bath</p>
+            <p>Shower Spray</p>
+            <p>Faucet</p>
+            <p>Accessories</p>
+            <p>Supplementary Parts</p>
+        </div>
+        <div class="column-footer">
+            <h3>FIND US</h3>
+            <p>@wisma81</p>
+            <p>Dealers</p>
+        </div>
+        <div class="column-footer">
+            <h3>WASHLET</h3>
+            <p>Wellness</p>
+            <p>Cleanliness</p>
+            <p>Design</p>
+            <p>Sustainability</p>
+            <p>Hospitality</p>
+        </div>
+        <div class="column-footer">
+            <h3>DESIGNER SERIES</h3>
+            <p>Alisei</p>
+            <p>Hayon</p>
+            <p>Toja</p>
+            <p>Le Muse</p>
+        </div>
+        <div class="column-footer">
+            <h3>ABOUT US</h3>
+            <p>Investors</p>
+            <p>Catalogs</p>
+            <p>Warranty</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>• Some products may not be available in your area.</p>
+        <p>• Prices indicated are manufacturer's suggested retail price, prices may change anytime without notice.</p>
+        <p>• Please check with your nearest reseller for updated prices.</p>
+        <p>• Prices shown for lavatory does not include faucet and accessories</p>
+        <p>• All pictures shown are for illustration purpose only. Actual product may vary</p>
+        <div class="social-icons-footer">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="address-footer">
+            <p>PT Surya Toto Indonesia Tbk.</p>
+            <p>Jl. Letjen S. Parman Kav. 81</p>
+            <p>Jakarta 11420</p>
+            <p>Tel. +62 21 2929 8686</p>
+            <p>Fax. +62 21 568 2282</p>
+        </div>
+    </div>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        /* navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .navbar .logo {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .menu {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar .menu li {
+            margin: 0 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .navbar .menu li a {
+            text-decoration: none;
+            color: black;
+        }
+        .navbar .search {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .search input {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 5px;
+            font-size: 16px;
+        }
+        .navbar .search .fa-search {
+            margin-left: 10px;
+            font-size: 20px;
+            color: #ccc;
+        }
+        /* navbar end */
+
+        /* washlet hero 1 */
+        .hero-washlet-1 {
+            background-image: url("/img/d173d9_055b55153bd14c2380c7f3dc082fa51c~mv2.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 800px;
+        }
+        /* washlet hero 1 end */
+
+
+
+
+        .container-neorest-3 {
+            display: flex;
+            padding: 10vh 10vh;
+        }
+        .section-neorest-3 {
+            flex: 1;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .section-neorest-3 img {
+            width: 100%;
+            height: auto;
+            filter: brightness(50%);
+        }
+
+        .section-neorest-3 img:hover {
+            filter: none;
+            transition: 500ms;
+        }
+        .section-text-neorest-3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+
+
+
+
+
+
+        .product-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20vh 10vh;
+        }
+        .product-item {
+            text-align: center;
+            padding: 20px;
+            width: 20%;
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .product-item .name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .product-item .price {
+            color: #666;
+            margin-top: 5px;
+        }
+        .product-item hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+
+
+
+
+
+
+
+
+
+        /* footer */
+        .container-footer {
+            background-color: rgb(228, 228, 228);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 50px 100px;
+        }
+        .column-footer {
+            flex: 1;
+            min-width: 150px;
+            margin: 10px;
+        }
+        .column-footer h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .column-footer p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 100px;
+        }
+        .footer p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+        .footer .social-icons-footer {
+            margin: 20px 0;
+        }
+        .footer .social-icons-footer i {
+            font-size: 20px;
+            margin: 0 10px;
+        }
+        .footer .address-footer {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        /* footer end */
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="bg-white border-gray-200">
+        <div class="max-w-screen flex flex-wrap items-center justify-between ">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap bg-black text-white px-4 py-2">TOTO</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div class="hidden w-full lg:w-auto lg:flex lg:flex-row lg:gap-5 lg:justify-between lg:items-center md:flex md:flex-row md:items-center md:justify-between md:w-[80%]" id="navbar-default">                
+                
+                <div>
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
+                        <li>
+                            <a href="neorest-menu.html" class="block py-2 px-3 uppercase text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0">NEOREST</a>
+                        </li>
+                        <li>
+                            <a href="washlet-menu.html" class="block py-2 px-3 uppercase text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0">WASHLET</a>
+                        </li>
+                        <li>
+                            <a href="sanitary-menu.html" class="block py-2 px-3 uppercase text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0">SANITARY</a>
+                        </li>
+                        <li>
+                            <a href="fitting-menu.html" class="block py-2 px-3 uppercase text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0 ">FITTING</a>
+                        </li>
+                        <li>
+                            <a href="find-Us-menu.html" class="block py-2 px-3 uppercase text-gray-900  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-semibold md:p-0 ">FIND US</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="flex">
+                    <div class="relative w-full md:w-auto">
+                        <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 border-gray-300 focus:ring-slate-700 " placeholder="Search" required />
+                        <button type="submit" class="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white bg-slate-800 border-b border-b-slate-600 hover:bg-slate-500  ">
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+
+
+
+    <!-- hero 1 washlet -->
+    <div class="hero-washlet-1" style="position: relative;">
+        <div style=" position: absolute; width: 50%; height: 100%; background-color: rgba(0, 0, 0, 0.658); display: flex; align-items: center; justify-content: center;">
+            <h1 style="font-size: 50pt; color: whitesmoke;">toto Washlet</h1>
+        </div>
+    </div>
+    <!-- hero 1 washlet end -->
+
+
+    <!-- hero 2 washlet -->
+    <div style="background-image: url('https://static.wixstatic.com/media/d173d9_51432889b05b4f88a12cfab0c704d8e5~mv2_d_1920_2256_s_2.jpg/v1/fill/w_1903,h_958,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/d173d9_51432889b05b4f88a12cfab0c704d8e5~mv2_d_1920_2256_s_2.jpg'); background-repeat: no-repeat; background-size: cover; padding: 20px; position: relative; background-color: beige; height: 1000px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div style="width: 70%;">
+            <h1 style="font-size: 60pt;">TOTO <br><span style="font-size: 20pt;">Life-changing technology that brings wellness to life.</span></h1>
+            
+            <p style="line-height: 30px;">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat earum ipsum asperiores. Nulla veniam aliquid rem dolorum sunt maxime voluptatum at ex amet deleniti consectetur ratione recusandae consequuntur dicta laudantium velit ducimus inventore voluptates necessitatibus illum, minus eveniet autem et. Illum quas dolore, exercitationem possimus commodi et excepturi quisquam eum doloremque nobis asperiores labore nesciunt officiis aperiam, nisi iusto distinctio. Distinctio quam dolores consequuntur doloremque modi voluptatem, alias iste impedit quia itaque repudiandae earum? Culpa nam corrupti dicta placeat. Ullam, dolor ea exercitationem cum aspernatur dolores temporibus repellat quos neque rerum laboriosam iste vel, blanditiis placeat, eius amet. Consectetur, nesciunt!
+            </p>
+        </div>
+        <img src="https://static.wixstatic.com/media/d173d9_8ed49fb39e34453aa500954f1eebe1a9~mv2.png/v1/fill/w_733,h_471,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d173d9_8ed49fb39e34453aa500954f1eebe1a9~mv2.png" alt="" style="width: max-content; background-color: azure; height: 100%;">
+        
+    </div>
+    <!-- hero 2 washlet end -->
+
+
+    <div class="container-neorest-3">
+        <div class="section-neorest-3">
+            <img alt="Water splash representing wellness" height="500" src="/img/Washlet.webp" width="300"/>
+            <div class="section-text-neorest-3">
+            WELLNESS
+            </div>
+        </div>
+        <div class="section-neorest-3">
+            <img alt="Clean toilet bowl representing cleanliness" height="500" src="/img/Washlet.webp" width="300"/>
+            <div class="section-text-neorest-3">
+            CLEANLINESS
+            </div>
+        </div>
+        <div class="section-neorest-3">
+            <img alt="Sleek toilet design representing design" height="500" src="/img/Washlet.webp" width="300"/>
+            <div class="section-text-neorest-3">
+            DESIGN
+            </div>
+        </div>
+        <div class="section-neorest-3">
+            <img alt="Toilet with eco-friendly features representing sustainability" height="500" src="/img/Washlet.webp" width="300"/>
+            <div class="section-text-neorest-3">
+            SUSTAINABILITY
+            </div>
+        </div>
+        <div class="section-neorest-3">
+            <img alt="Luxurious toilet setup representing hospitality" height="500" src="/img/Washlet.webp" width="300"/>
+            <div class="section-text-neorest-3">
+            HOSPITALITY
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="product-list">
+        <div class="product-item">
+            <img alt="Product image of CS90IKVT" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            CS90IKVT
+            </div>
+            <div class="price">
+            IDR 315,000,000
+            </div>
+        </div>
+        <div class="product-item">
+            <img alt="Product image of PJYD2200PWE" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            PJYD2200PWE
+            </div>
+            <div class="price">
+            IDR 275,800,000
+            </div>
+        </div>
+        <div class="product-item">
+            <img alt="Product image of CS900VT" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            CS900VT
+            </div>
+            <div class="price">
+            IDR 170,000,000
+            </div>
+        </div>
+        <div class="product-item">
+            <img alt="Product image of CES95380PZT" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            CES95380PZT
+            </div>
+            <div class="price">
+            IDR 146,100,000
+            </div>
+        </div>
+        <div class="product-item">
+            <img alt="Product image of CES87320VT" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            CES87320VT
+            </div>
+            <div class="price">
+            IDR 120,000,000
+            </div>
+        </div>
+        <div class="product-item">
+            <img alt="Product image of CES87320VT" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            CES87320VT
+            </div>
+            <div class="price">
+            IDR 120,000,000
+            </div>
+        </div>
+        <div class="product-item">
+            <img alt="Product image of CES87320VT" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            CES87320VT
+            </div>
+            <div class="price">
+            IDR 120,000,000
+            </div>
+        </div>
+        <div class="product-item">
+            <img alt="Product image of CES87320VT" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            CES87320VT
+            </div>
+            <div class="price">
+            IDR 120,000,000
+            </div>
+        </div>
+        <div class="product-item">
+            <img alt="Product image of CES87320VT" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            CES87320VT
+            </div>
+            <div class="price">
+            IDR 120,000,000
+            </div>
+        </div>
+        <div class="product-item">
+            <img alt="Product image of CES87320VT" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            CES87320VT
+            </div>
+            <div class="price">
+            IDR 120,000,000
+            </div>
+        </div>
+        <div class="product-item">
+            <img alt="Product image of CES87320VT" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            CES87320VT
+            </div>
+            <div class="price">
+            IDR 120,000,000
+            </div>
+        </div>
+        <div class="product-item">
+            <img alt="Product image of CES87320VT" height="200" src="/img/DSC_0037_C12 T12_Right.jpg" width="250"/>
+            <hr/>
+            <div class="name">
+            CES87320VT
+            </div>
+            <div class="price">
+            IDR 120,000,000
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="container-footer">
+        <div class="column-footer">
+            <h3>NEOREST</h3>
+            <p>Wellness</p>
+            <p>Cleanliness</p>
+            <p>Design</p>
+            <p>Sustainability</p>
+            <p>Hospitality</p>
+        </div>
+        <div class="column-footer">
+            <h3>SANITARY</h3>
+            <p>Neorest</p>
+            <p>Toilet</p>
+            <p>Lavatory</p>
+            <p>Urinal</p>
+            <p>Bidet</p>
+            <p>Bathtub</p>
+            <p>Sink</p>
+        </div>
+        <div class="column-footer">
+            <h3>FITTING</h3>
+            <p>Automatic</p>
+            <p>Shower & Bath</p>
+            <p>Shower Spray</p>
+            <p>Faucet</p>
+            <p>Accessories</p>
+            <p>Supplementary Parts</p>
+        </div>
+        <div class="column-footer">
+            <h3>FIND US</h3>
+            <p>@wisma81</p>
+            <p>Dealers</p>
+        </div>
+        <div class="column-footer">
+            <h3>WASHLET</h3>
+            <p>Wellness</p>
+            <p>Cleanliness</p>
+            <p>Design</p>
+            <p>Sustainability</p>
+            <p>Hospitality</p>
+        </div>
+        <div class="column-footer">
+            <h3>DESIGNER SERIES</h3>
+            <p>Alisei</p>
+            <p>Hayon</p>
+            <p>Toja</p>
+            <p>Le Muse</p>
+        </div>
+        <div class="column-footer">
+            <h3>ABOUT US</h3>
+            <p>Investors</p>
+            <p>Catalogs</p>
+            <p>Warranty</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>• Some products may not be available in your area.</p>
+        <p>• Prices indicated are manufacturer's suggested retail price, prices may change anytime without notice.</p>
+        <p>• Please check with your nearest reseller for updated prices.</p>
+        <p>• Prices shown for lavatory does not include faucet and accessories</p>
+        <p>• All pictures shown are for illustration purpose only. Actual product may vary</p>
+        <div class="social-icons-footer">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="address-footer">
+            <p>PT Surya Toto Indonesia Tbk.</p>
+            <p>Jl. Letjen S. Parman Kav. 81</p>
+            <p>Jakarta 11420</p>
+            <p>Tel. +62 21 2929 8686</p>
+            <p>Fax. +62 21 568 2282</p>
+        </div>
+    </div>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+</html>
