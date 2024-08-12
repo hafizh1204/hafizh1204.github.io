@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/output.css">
     <title>Document</title>
     <style>
         body, html {
@@ -23,35 +22,7 @@
 
 
 
-        .product-list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: center;
-            padding: 20vh 10vh;
-        }
-        .product-item {
-            text-align: center;
-            padding: 20px;
-            width: 20%;
-        }
-        .product-item img {
-            width: 100%;
-            height: auto;
-        }
-        .product-item .name {
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        .product-item .price {
-            color: #666;
-            margin-top: 5px;
-        }
-        .product-item hr {
-            margin: 20px 0;
-            border: 0;
-            border-top: 1px solid #ccc;
-        }
+        
 
 
 
@@ -160,11 +131,11 @@
 
 
 
-    <div class="w-full h-[40vh] lg:h-[90vh] bg-center" style="background-image: url('/img/wastafel-tampilan.avif');">
+    <div class="w-full h-[60vh] lg:h-[90vh] bg-center" style="background-image: url('/img/wastafel-tampilan.avif');">
         <div class="w-full lg:w-1/2 h-full flex lg:justify-end justify-center">
-            <div class="flex flex-col box-border p-[10vh] h-full justify-center md:w-[40vh] md:p-0">
-                <h1 class="text-4xl lg:text-[5em] font-semibold text-white">Washlet</h1>
-                <p class="text-[12pt] p-6 lg:my-10 bg-white bg-opacity-70">
+            <div class="flex flex-col box-border p-[10vh] h-full justify-center md:w-[60vh] md:gap-y-5 md:p-0">
+                <h1 class="text-4xl md:text-[5em] font-semibold text-gray-800">Washlet</h1>
+                <p class="text-[10pt] md:text-[14pt] p-6 lg:my-10 bg-white bg-opacity-70">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quod eius quia consequuntur temporibus dolorum minima, magni consequatur magnam dolorem? <br>
                     <a href="#" class="text-blue-300 hover:text-black">Learn More</a>
                 </p>
@@ -186,87 +157,87 @@
     </div>
 
 
-    <div class="w-full flex flex-wrap items-center justify-center lg:flex-row lg:px-[20px] md:px-[20px]">
-        <a href="#" class="flex flex-wrap justify-center items-center bg-cover md:w-[34vh] w-[25vh]  h-[300px] lg:h-[50vh] md:h-[30vh] " style="background-image: url('https://plus.unsplash.com/premium_photo-1676320514136-5a15d9f97dfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="w-full flex flex-wrap items-center justify-center lg:flex-row lg:px-[20px] md:px-0">
+        <a href="#" class="flex flex-wrap justify-center items-center bg-cover md:w-[30vh] w-[25vh]  h-[300px] lg:h-[50vh] md:h-[30vh] " style="background-image: url('https://plus.unsplash.com/premium_photo-1676320514136-5a15d9f97dfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
             <h1 class="uppercase text-2xl font-semibold text-white backdrop-brightness-50 w-full h-full flex justify-center items-center hover:backdrop-brightness-100 duration-200">Wellness</h1>
 
         </a>
-        <a href="#" class="flex flex-wrap justify-center items-center bg-cover md:w-[34vh] w-[25vh]  h-[300px] lg:h-[50vh] md:h-[30vh] " style="background-image: url('https://plus.unsplash.com/premium_photo-1676320514136-5a15d9f97dfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <a href="#" class="flex flex-wrap justify-center items-center bg-cover md:w-[30vh] w-[25vh]  h-[300px] lg:h-[50vh] md:h-[30vh] " style="background-image: url('https://plus.unsplash.com/premium_photo-1676320514136-5a15d9f97dfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
             <h1 class="uppercase text-2xl font-semibold text-white backdrop-brightness-50 w-full h-full flex justify-center items-center hover:backdrop-brightness-100 duration-200">Cleanliness</h1>
 
         </a>
-        <a href="#" class="flex flex-wrap justify-center items-center bg-cover md:w-[34vh] w-[25vh]  h-[300px] lg:h-[50vh] md:h-[30vh] " style="background-image: url('https://plus.unsplash.com/premium_photo-1676320514136-5a15d9f97dfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <a href="#" class="flex flex-wrap justify-center items-center bg-cover md:w-[30vh] w-[25vh]  h-[300px] lg:h-[50vh] md:h-[30vh] " style="background-image: url('https://plus.unsplash.com/premium_photo-1676320514136-5a15d9f97dfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
             <h1 class="uppercase text-2xl font-semibold text-white backdrop-brightness-50 w-full h-full flex justify-center items-center hover:backdrop-brightness-100 duration-200">design</h1>
 
         </a>
-        <a href="#" class="flex flex-wrap justify-center items-center bg-cover md:w-[34vh] w-[25vh]  h-[300px] lg:h-[50vh] md:h-[30vh] " style="background-image: url('https://plus.unsplash.com/premium_photo-1676320514136-5a15d9f97dfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <a href="#" class="flex flex-wrap justify-center items-center bg-cover md:w-[30vh] w-[25vh]  h-[300px] lg:h-[50vh] md:h-[30vh] " style="background-image: url('https://plus.unsplash.com/premium_photo-1676320514136-5a15d9f97dfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
             <h1 class="uppercase text-2xl font-semibold text-white backdrop-brightness-50 w-full h-full flex justify-center items-center hover:backdrop-brightness-100 duration-200">Sustainability</h1>
 
         </a>
-        <a href="#" class="flex flex-wrap justify-center items-center bg-cover md:w-[34vh] w-[25vh] h-[300px] lg:h-[50vh] md:h-[30vh] " style="background-image: url('https://plus.unsplash.com/premium_photo-1676320514136-5a15d9f97dfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <a href="#" class="flex flex-wrap justify-center items-center bg-cover md:w-[30vh] w-[25vh] h-[300px] lg:h-[50vh] md:h-[30vh] " style="background-image: url('https://plus.unsplash.com/premium_photo-1676320514136-5a15d9f97dfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
             <h1 class="uppercase text-2xl font-semibold text-white backdrop-brightness-50 w-full h-full flex justify-center items-center hover:backdrop-brightness-100 duration-200">Hospitality</h1>
 
         </a>
         
     </div>
 
-    <div class="w-full flex justify-center flex-wrap gap-7 py-7 lg:px-32">
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+    <div class="w-full flex justify-center flex-wrap gap-7 py-7 lg:px-20">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
         </a>
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
         </a>
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
         </a>
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
         </a>
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
         </a>
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
         </a>
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
         </a>
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
         </a>
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
         </a>
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
         </a>
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
         </a>
-        <a href="#" class="w-[25vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
+        <a href="#" class="w-[20vh] h-100px overflow-hidden lg:w-[30vh] flex flex-col justify-center">
             <img src="/img/img-alt.png" alt="" class=" w-full h-full lg:w-[300px] lg:h-[300px] object-cover">
             <h1 class="uppercase text-sm font-semibold pt-3 lg:text-lg">KODE120983</h1>
             <p class="uppercase lg:text-lg">idr 2,300,000</p>
@@ -275,7 +246,6 @@
         
 
     </div>
-
 
 
 
@@ -362,6 +332,6 @@
         </div>
     </div>
     <!-- footer end -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>
